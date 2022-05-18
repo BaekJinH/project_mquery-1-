@@ -1,6 +1,5 @@
 #wrap{
     width:100%;
-    position:relative;
 }
 
 /* end wrap line */
@@ -10,25 +9,64 @@
 
 header{
     width:100%;
-    height:64px;
+    height:88px;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    align-items: flex-end;
 }
 
 header .logo{
+    font-size:27px;
+    font-weight:bold;
+    font-family: 'Nanum Myeongjo', serif;
     color:white;
+}
+
+.head_cont{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin:0 auto;
+    width:1679px;
+    height: 68px;
 }
 
 /* end header line */
 
-nav ul{
+nav{
     display:flex;
+}
+.nav_call{
+    width:185px;
+    height:68px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+.book_btn{
+    width:185px;
+    height:68px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#b8b8a0;
+    color:white;
+}
+.book_btn:hover{
+    transition:all 0.5s;
+    color: #b8b8a0;;
+   background-color:white;
+   cursor:pointer;
 
 }
 
-.book_box:hover{
-   background-color:white;
+
+.info_img{
+    background-image: url(../img/more.png);
+    background-size:cover;
+    background-position:center;
+    width:60px;
+    height:40px;
 }
 
 
@@ -41,12 +79,14 @@ nav ul{
     width:1300px;
     height:900px;
     position:relative;
+    font-family: 'Nanum Myeongjo', serif;
+
 
 }
 #slider .text{
     position:absolute;
     color:White;
-    top:30%;
+    top:33%;
 }
 .text h1{
     font-size:130px;
@@ -64,7 +104,7 @@ nav ul{
     background-image:url(../img/slider_img-2.jpg);
     background-position:center;
     background-size:cover;
-    box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.5);
+    box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -105,6 +145,7 @@ main{
 
 
 footer{
+    font-family: 'Nanum Myeongjo', serif;
     width:1320px;
     height:525px;
     margin:0 auto;
