@@ -36,6 +36,7 @@ header .logo{
 
 nav{
     display:flex;
+    font-weight:bold;
 }
 .nav_call{
     width:185px;
@@ -102,7 +103,7 @@ nav{
 #slider .text{
     position:absolute;
     color:White;
-    top:33%;
+    top:30%;
 }
 .text h1{
     font-size:130px;
@@ -295,19 +296,50 @@ main > .main_container{
     background-color:white;
     top:45%;
     left:48%;
-    border-radius: 50%;
     background-image:url(../img/play.png);
     background-position:center;
     background-size:50px;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
+    z-index:999;
+    border-radius: 50%    
 }
+
+.play::before{
+    content: '';
+    position: absolute;
+    background: white;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation:wave 3s infinite linear;
+}
+.play::after{
+    opacity: 0;
+    animation:wave 3s 1.5s infinite linear;
+}
+
+@keyframes wave{
+    0%{
+        transform:scale(0); 
+        opacity:1
+    }
+    100%{
+       transform:scale(3.5); 
+        opacity:0;
+    }
+}
+
 .play:hover{
     cursor:pointer;
 }
 
- 
- 
-.main_imgbox1 > .right{
+
+
+
+
+/* .main_imgbox1 > .right{
     width:50px;
     height:50px;
     background-color:white;
@@ -317,7 +349,7 @@ main > .main_container{
     right:0;
     background-image: url(../img/right.png);
     background-size:cover;
-}
+} */
 
 /* main box1 end line */
 main > .main_container2{
@@ -337,7 +369,35 @@ main > .main_container2{
     background-size:cover;
     width:1077px;
     height:600px;
+    position:relative;
 }
+
+
+.left_one{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:0;
+    top:45%;
+    background-image:url(../img/left_slide.png);
+    background-size:50%;
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor:pointer
+}
+.right_one{
+    width:100px;
+    height:100px;
+    position: absolute;
+    right:0;
+    top:45%;
+    background-image:url(../img/right_slide.png);
+    background-size:50%;
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor:pointer
+}
+
 
 
 .under_text{
@@ -488,6 +548,182 @@ article:nth-of-type(3){
 }
 
 /* main container3 end line */
+
+
+
+#main4{
+    width:100%;
+    height:auto;
+    margin-top:130px
+
+}
+
+#main4 > .main4_longimg{
+    width:100%;
+    height:526px;
+    background-image:url(../img/main4_img1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.main4_txtbox{
+    margin:0 auto;
+    width:1320px;
+    height:838px;
+    display:flex;
+    flex-flow:row wrap;
+    align-content: center;
+}
+
+.main4_txtbox > h2{
+    width:100%;
+    text-align:center;
+    font-size:70px;
+    padding-bottom:55px;
+}
+
+.main4_box{
+    width:624px;
+    height:305px;
+    background-color:#eee;
+    border-top:5px solid #b8b8a0;
+    margin:15px;
+}
+
+.top_box{
+    width:90%;
+    height:190px;
+    margin:0 auto;
+}
+.main4_box > .top_box > p{
+    font-size:23px;
+    padding:55px 50px 30px 0px;
+    line-height:35px;
+    color:#666;
+}
+.profile{
+    width:90%;
+    height:120px;
+    margin:0 auto;
+    border-top:1px solid #b8b8a0;
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+}
+
+.img{
+    width:70px;
+    height:70px;
+    background-color:red;
+    border-radius:50%;
+    background-image:url(../img/profile1.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+.name{
+    margin-left:20px;
+}
+
+.name > h4{
+    font-size:20px;
+    color:#444
+}
+.name > span{
+    font-size:18px;
+    color:#666;
+}
+
+.main4_longimg2{
+    width:100%;
+    height:437px;
+    background:#eee;
+    display:flex;
+}
+
+
+.main4_longimg2 > .main4_img{
+    width:25%;
+    height:100%;
+}
+
+
+
+.main4_img:nth-of-type(1){
+    background-image:url(../img/main_under1.png);
+    background-size:cover;
+    transition:all 0.5s
+
+}
+
+
+
+.main4_img:nth-of-type(2){
+    background-image:url(../img/main_under2.png);
+    background-size:cover;
+    transition:all 0.5s
+
+}
+
+
+
+.main4_img:nth-of-type(3){
+    background-image:url(../img/main_under3.png);
+    background-size:cover;
+    transition:all 0.5s
+
+}
+
+
+
+.main4_img:nth-of-type(4){
+    background-image:url(../img/main_under4.jpeg);
+    background-size:cover;
+    transition:all 0.5s
+}
+
+
+
+.main4_img:nth-of-type(1):hover{
+    opacity:0.6;
+}
+
+.main4_img:nth-of-type(2):hover{
+    opacity:0.6;
+}
+
+.main4_img:nth-of-type(3):hover{
+    opacity:0.6;
+}
+
+.main4_img:nth-of-type(4):hover{
+    opacity:0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main container4 end line */
+
 
 
 /* end main line */
