@@ -43,6 +43,8 @@ function close_menu(){
     document.getElementsByClassName('slide_menu')[0].style.width='0%';
 }
 
+
+
 $( document ).ready( function() {
     $( window ).scroll( function() {
       if ( $( this ).scrollTop() > 200 ) {
@@ -59,11 +61,38 @@ $( document ).ready( function() {
     } );
 
 
-
-
 $(function(){
     $('slide_btn1').click(function(){
         $('slide_btn').removeclass('active');
         $(this).addclass('active')
     })
 })
+
+
+$(window).scroll(
+    function(){
+        if($(window).scrollTop() > 1050){
+            $('.header').addClass('fix')
+        }
+        else{
+            $('.header').removeClass('fix')
+        }
+    }
+)
+
+
+
+
+
+// let header = document.querySelector(".header");
+// let headerHeight = header.offsetHeight;
+
+// window.onscroll = function () {
+//   let windowTop = window.scrollY;
+//   if (windowTop >= headerHeight) {
+//     header.classList.add("drop");
+//   } else {
+//     header.classList.remove("drop");
+//   }
+// };
+

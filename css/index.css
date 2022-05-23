@@ -32,9 +32,33 @@ header .logo{
     height: 68px;
 }
 
+.fix{
+    position:fixed;
+    _position:absolute;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content: space-around;
+    background-color:#b8b8a0;
+    z-index:99999999999;
+
+}
 
 
-
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.section:nth-child(even) {
+    background: #ccc;
+    color:#333;
+}
 
 
 
@@ -103,7 +127,10 @@ nav{
     cursor:pointer;
 
 }
-
+.close:hover{
+    opacity:0.5;
+    transition:0.3s;
+}
 
 .slide_menu{
     position:fixed;
@@ -124,6 +151,7 @@ nav{
 .overlay_content {
     height:700px;
     margin-top:50px;
+    
 }
 
 
@@ -147,7 +175,9 @@ nav{
     }
 
 
-
+.overlay_content a:hover{
+    color:white;
+}
 
 
 
@@ -184,7 +214,6 @@ nav{
     border-radius: 50%;
     margin:5px;
     z-index:99;
-    background-color:red;
 }
 
 
