@@ -29,17 +29,41 @@ $(document).ready(function(){
 
 
 
-
-$(function(){
-    $('.menu').click(function(){
-        $('.slide_menu').slideToggle()
-    })
-})
+// $(function(){
+//     $('.menu').click(function(){
+//         $('.slide_menu').slideToggle()
+//     })
+// })
 
 function open_menu(){
-    document.getElementsByClassName('slide_menu')[0].style.width='100%';
+    document.getElementsByClassName('slide_menu')[0].style.width='335px';
 }
 
 function close_menu(){
     document.getElementsByClassName('slide_menu')[0].style.width='0%';
 }
+
+$( document ).ready( function() {
+    $( window ).scroll( function() {
+      if ( $( this ).scrollTop() > 200 ) {
+        $( '.scroll_top' ).fadeIn();
+      } else {
+        $( '.scroll_top' ).fadeOut();
+      }
+    } );
+
+    $( '.scroll_top' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+        return false;
+      } );
+    } );
+
+
+
+
+$(function(){
+    $('slide_btn1').click(function(){
+        $('slide_btn').removeclass('active');
+        $(this).addclass('active')
+    })
+})
