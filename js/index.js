@@ -68,17 +68,39 @@ $(function(){
     })
 })
 
+if (matchMedia('screen and (min-width:699px)').matches){
+    function open_menu(){
+        document.getElementsByClassName('slide_menu')[0].style.width='335px';
+    }
+    
+    function close_menu(){
+        document.getElementsByClassName('slide_menu')[0].style.width='0%';
+    }
+}else{
+    function open_menu(){
+        document.getElementsByClassName('slide_menu')[0].style.width='100%'
+    }
+    function close_menu(){
+        document.getElementsByClassName('slide_menu')[0].style.width='0%'
+    }
+}
+
 
 $(window).scroll(
     function(){
         if($(window).scrollTop() > 1050){
             $('.header').addClass('fix')
+            $('.header').addClass('.logo head_nav')
         }
         else{
+            $('.header').removeClass('fix')
             $('.header').removeClass('fix')
         }
     }
 )
+
+
+
 
 
 
