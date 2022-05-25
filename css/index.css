@@ -38,7 +38,7 @@
         justify-content: space-around;
         background-color:#b8b8a0;
         z-index:99999999999;
-    
+        
     }
     
 
@@ -2307,8 +2307,8 @@
 
 
 @media screen and (min-width:1100px){
-        #wrap{
-        width:100%;
+#wrap{
+    width:100%;
     }
 header{
     width:100%;
@@ -2564,6 +2564,7 @@ nav{
     position:absolute;
     color:White;
     top:30%;
+    left:0;
 }
 .text h1{
     font-size:130px;
