@@ -1052,7 +1052,6 @@
     }
     .foot_cate h3{
         font-size:40px;
-        padding:30px 20px;
 
     }
     .foot_cate a{
@@ -1074,13 +1073,18 @@
     
     .foot_numb h3{
         font-size:40px;
-        padding:30px 20px;
 
     }
+    .foot_numb ul{
+        width:100%;
+        text-align:center;
+    }
     .foot_numb li{
-        display:block;
-        padding:5px 10px;
+        display:flex;        
         font-size:20px;
+        text-align: center;
+        width:100%;
+        justify-content: center;
     }
     
     
