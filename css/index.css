@@ -1007,6 +1007,7 @@
     
     footer{
         width:100%;
+        height:auto;
         margin:0 auto;
         color:#888;
         margin-top:50px;
@@ -1116,6 +1117,7 @@
     
     
     .foot_under{
+        display:none;
         text-align:Center;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -3315,7 +3317,7 @@ article:nth-of-type(3){
 
 footer{
     width:1320px;
-    height:525px;
+    height:auto;
     margin:0 auto;
     color:#555;
 }
