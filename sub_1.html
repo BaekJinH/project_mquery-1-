@@ -31,12 +31,14 @@
                                 x
                             </div>
                             <div class="overlay_content">
-                                <a href="index.html">Home</a>
-                                <a href="">Page</a>
-                                <a href="">Service</a>
-                                <a href="">Gallery</a>
-                                <a href="">Blog</a>
-                                <a href="">Shop</a>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="">Page</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Shop</a></li>
+                                </ul>
                             </div>
                             <div class="overlay_two">
                                 <p >Call Us: 416.735.3500</p>
@@ -61,8 +63,8 @@
             <main>
                 <div class="main_container1">
                     <div class="main1_con">
-                        <div class="main1_img">
-                            <img src="img/main1_img-1.jpg" alt="" onclick="anc1()">
+                        <div class="main1_img main1_img1">
+                            <img src="img/main1_img-1.jpg" alt="" onclick="anc1()" class="main1_1">
                         </div>
                         <div class="main1_head">
                             <h5>GARDEN</h5>
@@ -70,7 +72,7 @@
                     </div>
                     <div class="main1_con">
                         <div class="main1_img main1_img2">
-                            <img src="img/main1_img-2.jpg" alt="" onclick="anc1()">
+                            <img src="img/main1_img-2.jpg" alt="" onclick="anc1()" class="main1_2">
 
                         </div>
                         <div class="main1_head">
@@ -79,7 +81,7 @@
                     </div>
                     <div class="main1_con">
                         <div class="main1_img main1_img3">
-                            <img src="img/main1_img-3.jpg" alt="" onclick="anc1()">
+                            <img src="img/main1_img-3.jpg" alt="" onclick="anc1()" class="main1_3">
 
                         </div>
                         <div class="main1_head">
@@ -88,7 +90,7 @@
                     </div>
                     <div class="main1_con">
                         <div class="main1_img main1_img4">
-                            <img src="img/main1_img-5.jpg" alt="" onclick="anc1()">
+                            <img src="img/main1_img-5.jpg" alt="" onclick="anc1()" class="main1_4">
 
                         </div>
                         <div class="main1_head">
@@ -97,7 +99,7 @@
                     </div>
                     <div class="main1_con">
                         <div class="main1_img main1_img5">
-                            <img src="img/main1_img-4.jpg" alt="" onclick="anc1()">
+                            <img src="img/main1_img-4.jpg" alt="" onclick="anc1()" class="main1_5">
 
                         </div>
                         <div class="main1_head">
@@ -126,65 +128,179 @@
                         </div>
                     </div>
                 </div>
+                <div class="numb_container">
+                    <div class="numb_head">
+                        <h2>Guest</h2>
+                    </div>
+                    <div class="left_cont">
+                        <div class="left_imgbox"></div>
+                        <div class="left_imgbox2"></div>
+                    </div>
+                    <div class="right_cont">
+                        <!-- <div class="right_cont_sec"> -->
+                            <div class="total_box">
+                                <div class="count_head">
+                                    <h1>Oakberry A Real Estate Company</h1>
+                                    <p>
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. 
+                                    </p>
+                                </div>
+                                <div class="count_numb">
+                                    <div class="numb">
+                                        <span class="count1 count"></span>
+                                        <span>YEARS OF EXPERIENCED</span>
+                                    </div>
+                                    <div class="numb">
+                                        <span class="count2 count"></span>
+                                        <span>TOTAL PROPERTIES</span>
+                                    </div>
+                                    <div class="numb">
+                                        <span class="count3 count"></span>
+                                        <span>QUALIFIED REALTORS</span>
+                                    </div>
+                                    <div class="numb">
+                                        <span class="count4 count"></span>
+                                        <span>TOTAL BRANCHES</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_txtbox"></div>
+                        <!-- </div> -->
+                    </div>
+                </div>
                 <!-- <div class="main3_tophead">
                     <h2>Our Project</h2>
                 </div> -->
                 <div class="main_container3">
-                    <div class="main3_headbox">
+                    <div class="main3_headbox main3_garden">
                         <h3>GARDENS</h3>
                     </div>
-                    <div class="main3_box" id="main3_box1">
-                        <div class="main3_left">
-                        </div>
+                    <div class="main3_box main3_box1" id="main3_box1">
+                        <div class="main3_left main3_left1" id="cont3_left"></div>
+                        <!-- <div class="main3_left main3_left2" style="display:none;"></div>
+                        <div class="main3_left main3_left3" style="display:none;"></div>
+                        <div class="main3_left main3_left4" style="display:none;"></div>
+                        <div class="main3_left main3_left5" style="display:none;"></div> -->
                             <div class="span_box">
                             <!-- <div class="box1_article">
                                 <div class="box1_img"></div> -->
-                                <span>WILTSHIRE</span>
+                                <span onclick="main3()" class="main3_button1 cont3_btn1"><a>WILTSHIRE</a></span>
                             <!-- <div class="box1_article">
                                 <div class="box1_img"></div> -->
-                                <span>HOLLAND PARK</span>
+                                <span onclick="main3()" class="main3_button2 cont3_btn2"><a>HOLLAND PARK</a></span>
                             <!-- <div class="box1_article">
                                 <div class="box1_img"></div> -->
-                                <span>LIECHTENSTEIN</span>
+                                <span onclick="main3()" class="main3_button3 cont3_btn3"><a>LIECHTENSTEIN</a></span>
                             <!-- <div class="box1_article">
                                 <div class="box1_img"></div> -->
-                                <span>HAMPSHIRE</span>
+                                <span onclick="main3()" class="main3_button4 cont3_btn4"><a>HAMPSHIRE</a></span>
                             <!-- <div class="box1_article">
                                 <div class="box1_img"></div> -->
-                                <span>BATH</span>
+                                <span onclick="main3()" class="main3_button5 cont3_btn5"><a>BATH</a></span>
                             </div>
                     </div>
                 </div>
                 <div class="main_container4">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
+                    <div class="main3_headbox main3_hotel">
+                        <h3>HOTEL</h3>
                     </div>
                     <div class="main3_box" id="main3_box2">
-                        
+                        <div class="main3_left main3_left2" id="cont3_left2"></div>
+                        <!-- <div class="main3_left main3_left2" style="display:none;"></div>
+                        <div class="main3_left main3_left3" style="display:none;"></div>
+                        <div class="main3_left main3_left4" style="display:none;"></div>
+                        <div class="main3_left main3_left5" style="display:none;"></div> -->
+                            <div class="span_box">
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button1 cont4_btn1"><a>THE FRANKLIN</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button2 cont4_btn2"><a>THE DUXTON</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button3 cont4_btn3"><a>BLAKES AMSTERDAM</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button4 cont4_btn4"><a>LA SUITE WEST</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button5 cont4_btn5"><a>GROSVENOR HOUSE SUITES</a></span>
+                            </div>
                     </div>
                 </div>
                 <div class="main_container5">
                     <div class="main3_headbox">
-                        <h3>GARDENS</h3>
+                        <h3>INTERIORS</h3>
                     </div>
-                    <div class="main3_box" id="main3_box3">
-                        
+                    <div class="main3_box main3_inter" id="main3_box3">
+                        <div class="main3_left main3_left3" id="cont3_left3"></div>
+                        <!-- <div class="main3_left main3_left2" style="display:none;"></div>
+                        <div class="main3_left main3_left3" style="display:none;"></div>
+                        <div class="main3_left main3_left4" style="display:none;"></div>
+                        <div class="main3_left main3_left5" style="display:none;"></div> -->
+                            <div class="span_box">
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button1"><a >SWITZERLAND</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button2"><a>NEW YORK</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button3"><a >KNIGHTSBRIDGE</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button4"><a>SINGAPORE</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button5"><a >HOLLAND PARK</a></span>
+                            </div>
                     </div>
                 </div>
                 <div class="main_container6">
                     <div class="main3_headbox">
-                        <h3>GARDENS</h3>
+                        <h3>RETAIL</h3>
                     </div>
-                    <div class="main3_box" id="main3_box4">
-                        
+                    <div class="main3_box main3_retail" id="main3_box4">
+                        <div class="main3_left main3_left4" id="cont3_left4"></div>
+                        <!-- <div class="main3_left main3_left2" style="display:none;"></div>
+                        <div class="main3_left main3_left3" style="display:none;"></div>
+                        <div class="main3_left main3_left4" style="display:none;"></div>
+                        <div class="main3_left main3_left5" style="display:none;"></div> -->
+                            <div class="span_box">
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button1"><a >HENRY COTTONS</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button2"><a >VAN CLEEF & ARPELS</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button3"><a >LOKUM</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button4"><a >LOUIS VUITTON</a></span>
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                            </div>
                     </div>
                 </div>
                 <div class="main_container7">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
+                    <div class="main3_headbox main3_yacht">
+                        <h3>YACHTS</h3>
                     </div>
                     <div class="main3_box" id="main3_box5">
-                        
+                        <div class="main3_left main3_left5" id="cont3_left5"></div>
+                        <!-- <div class="main3_left main3_left2" style="display:none;"></div>
+                        <div class="main3_left main3_left3" style="display:none;"></div>
+                        <div class="main3_left main3_left4" style="display:none;"></div>
+                        <div class="main3_left main3_left5" style="display:none;"></div> -->
+                            <div class="span_box">
+                            <!-- <div class="box1_article">
+                                <div class="box1_img"></div> -->
+                                <span onclick="main3()" class="main3_button1"><a >BELUGA</a></span>
+                            </div>
                     </div>
                 </div>
             </main>
