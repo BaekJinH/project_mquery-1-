@@ -159,7 +159,7 @@ $(document).ready(function(){
       if($(this).scrollTop() > 2500){
           $('.left_imgbox2').display='';
           $('.left_imgbox2').fadeIn('slow');
-          $('.left_imgbox2').fadeIn(3000);
+          $('.left_imgbox2').fadeIn(3500);
       }
       else{
           $('.left_imgbox2').display='';
@@ -301,7 +301,7 @@ $(window).ready(function(){
         duration: 1000,
         step: function() {
           var num = numberWithCommas(this.val.toFixed(1));
-          $(".count2").text(num);
+          $(".count2").text(num+'K');
         },
         complete: function() {
           var num = numberWithCommas(this.val.toFixed(1));
