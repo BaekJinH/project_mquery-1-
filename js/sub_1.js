@@ -179,7 +179,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 3000){
+      if($(this).scrollTop() > 3300){
           $('#cont3_left').display='';
           $('#cont3_left').fadeIn('slow');
           $('#cont3_left').fadeIn(3000);
@@ -195,7 +195,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 3550){
+      if($(this).scrollTop() > 4200){
           $('#cont4_left').display='';
           $('#cont4_left').fadeIn('slow');
           $('#cont4_left').fadeIn(3000);
@@ -212,7 +212,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 4100){
+      if($(this).scrollTop() > 5150){
           $('#cont5_left').display='';
           $('#cont5_left').fadeIn('slow');
           $('#cont5_left').fadeIn(3000);
@@ -230,7 +230,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 4800){
+      if($(this).scrollTop() > 6100){
           $('#cont6_left').display='';
           $('#cont6_left').fadeIn('slow');
           $('#cont6_left').fadeIn(3000);
@@ -247,7 +247,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 5350){
+      if($(this).scrollTop() > 7000){
           $('#cont7_left').display='';
           $('#cont7_left').fadeIn('slow');
           $('#cont7_left').fadeIn(3000);
@@ -354,23 +354,23 @@ $(window).ready(function(){
 
 $( document ).ready( function(){
   $('.main1_1').click(function(){
-    var offset = $('.main_container3').offset();
+    var offset = $('#cont3_bg').offset();
     $('html').animate({scrollTop:offset.top},1000);
   })
   $('.main1_2').click(function(){
-    var offset = $('.main_container4').offset();
+    var offset = $('#cont4_bg').offset();
     $('html').animate({scrollTop:offset.top},1000);
   })
   $('.main1_3').click(function(){
-    var offset = $('.main_container5').offset();
+    var offset = $('#cont5_bg').offset();
     $('html').animate({scrollTop:offset.top},1000);
   })
   $('.main1_4').click(function(){
-    var offset = $('.main_container6').offset();
+    var offset = $('#cont6_bg').offset();
     $('html').animate({scrollTop:offset.top},1000);
   })
   $('.main1_5').click(function(){
-    var offset = $('.main_container7').offset();
+    var offset = $('#cont7_bg').offset();
     $('html').animate({scrollTop:offset.top},1000);
   })
 })
