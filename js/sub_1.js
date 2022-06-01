@@ -254,29 +254,29 @@ if (matchMedia('screen and (min-width:699px)').matches){
 
 }
 
-if(matchMedia('screen and (min-width:699px)').matches){
-    $(window).scroll(
-        function(){
-            if($(window).scrollTop() > 1050){
-                $('.header').addClass('fix')
-            }
-            else{
-                $('.header').removeClass('fix')
-            }
-        }
-    )
-}else{
-    $(window).scroll(
-        function(){
-            if($(window).scrollTop() > 650){
-                $('.header').addClass('fix')
-            }
-            else{
-                $('.header').removeClass('fix')
-            }
-        }
-    )
-}
+// if(matchMedia('screen and (min-width:699px)').matches){
+//     $(window).scroll(
+//         function(){
+//             if($(window).scrollTop() > 1050){
+//                 $('.header').addClass('fix')
+//             }
+//             else{
+//                 $('.header').removeClass('fix')
+//             }
+//         }
+//     )
+// }else{
+//     $(window).scroll(
+//         function(){
+//             if($(window).scrollTop() > 650){
+//                 $('.header').addClass('fix')
+//             }
+//             else{
+//                 $('.header').removeClass('fix')
+//             }
+//         }
+//     )
+// }
 
 
 
