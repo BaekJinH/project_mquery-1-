@@ -62,7 +62,7 @@
     }
     
     .book_btn{
-        width:185px;
+        width:125px;
         height:auto;
 
         display:flex;
@@ -71,7 +71,7 @@
         background-color:#b8b8a0;
         color:white;
         margin:0 20px;
-        font-size:23px;
+        font-size:20px;
     }
     .book_btn:hover{
         transition:all 0.5s;
@@ -276,11 +276,11 @@
     @keyframes fade {
         0%{
             opacity:0;
-            top:5%;
+            top:30%;
         }
         100%{
             opacity:1;
-            top:10%;
+            top:50%;
         }
     }
     
@@ -318,7 +318,7 @@
         width:100%;
         height:300px;
         margin:0 auto;
-        margin-top:100px;
+        margin-top:50px;
         display:flex;
         justify-content:space-around;
         position:relative;
@@ -411,7 +411,7 @@
     .main_container2{
         width:100%;
         height:600px;
-        margin:70px auto;
+        margin:20px auto;
     }
     
     
@@ -651,23 +651,126 @@
     
     
     
+    
+    
+    
+    
+    .button{
+        background-image:url(../img/main1_img-2.jpg);
+        background-size:cover;
+        background-position:center
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* button line */
+    
+    #cont3_bg{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+        background-image: url(../img/garden_main1.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        background-attachment: fixed;
+        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
+    }
+    
+    #cont4_bg{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+        background-image: url(../img/main1_img-2.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        background-attachment: fixed;
+        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
+        margin-top:150px;
+    }
+    
+    
+    #cont5_bg{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+        background-image: url(../img/main1_img-3.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        background-attachment: fixed;
+        margin-top:150px;
+        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    #cont6_bg{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+        background-image: url(../img/main1_img-5.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        background-attachment: fixed;
+        margin-top:150px;
+        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
+    }
+    
+    #cont7_bg{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+        background-image: url(../img/main1_img-4.jpg);
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        background-attachment: fixed;
+        margin-top:150px;
+        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
+    }
+    .bg_head{
+        display:block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        color:white;
+        font-size:70px;
+        text-align:center;
+        text-shadow:0px 0px 10px black;
+    }
+    
+    
+    /* main3_bg end line */
+    
+
+
+    
+    
     /* numb container end line */
-    .last_txt::after{
+    /* .last_txt::after{
         content:'Our Category';
         font-size: 20px;
         display:block;
         color:#b8b8a0;
         font-weight:bold;
-    }
+    } */
     
     
     
     .span_box{
-        width:30%;
-        height:100%;
+        width:100%;
+        height:10%;
         display:flex;
-        flex-flow:column wrap;
+        flex-flow:row wrap;
         justify-content:space-around;
+        align-items:center;
     }
     
     /* .span_box span:after{
@@ -701,7 +804,7 @@
     
     
     .main3_box span a{
-        font-size:23px;
+        font-size:12px;
         font-weight:bold;
         cursor:pointer;
         display:inline-block;
@@ -724,119 +827,6 @@
     /* span box */
     
     
-    
-    
-    
-    .button{
-        background-image:url(../img/main1_img-2.jpg);
-        background-size:cover;
-        background-position:center
-    }
-    
-    
-    
-    
-    
-    
-    
-    /* button line */
-    
-    #cont3_bg{
-        width:100%;
-        height:150px;
-        margin:0 auto;
-        background-image: url(../img/garden_main1.jpg);
-        background-size:cover;
-        background-position:center;
-        position:relative;
-        background-attachment: fixed;
-        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
-    }
-    
-    #cont4_bg{
-        width:100%;
-        height:150px;
-        margin:0 auto;
-        background-image: url(../img/main1_img-2.jpg);
-        background-size:cover;
-        background-position:center;
-        position:relative;
-        background-attachment: fixed;
-        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
-        margin-top:150px;
-    }
-    
-    
-    #cont5_bg{
-        width:100%;
-        height:150px;
-        margin:0 auto;
-        background-image: url(../img/main1_img-3.jpg);
-        background-size:cover;
-        background-position:center;
-        position:relative;
-        background-attachment: fixed;
-        margin-top:150px;
-        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
-    }
-    
-    
-    #cont6_bg{
-        width:100%;
-        height:150px;
-        margin:0 auto;
-        background-image: url(../img/main1_img-5.jpg);
-        background-size:cover;
-        background-position:center;
-        position:relative;
-        background-attachment: fixed;
-        margin-top:150px;
-        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
-    }
-    
-    #cont7_bg{
-        width:100%;
-        height:150px;
-        margin:0 auto;
-        background-image: url(../img/main1_img-4.jpg);
-        background-size:cover;
-        background-position:center;
-        position:relative;
-        background-attachment: fixed;
-        margin-top:150px;
-        box-shadow:inset 0 0 0 400px rgba(0, 0, 0, 0.5);
-    }
-    .bg_head{
-        display:block;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        top:55%;
-        left:50%;
-        color:white;
-        font-size:5.5em;
-        line-height:2.5em;
-        text-align:center;
-        text-shadow:0px 0px 10px black;
-    }
-    
-    
-    /* main3_bg end line */
-    
-    
-    .main3_tophead{
-        width:1803px;
-        height:auto;
-        margin:0 auto;
-    }
-    .main3_tophead h2{
-        font-size:65px;
-        margin-top:80px;
-        margin-bottom:50px;
-    }
-    
-    
-    
-    
     /* main3 tophead end line */
     .main_container3{
         width:100%;
@@ -845,32 +835,25 @@
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
         display:flex;
-        flex-flow:row wrap;
-        align-content: flex-start;
+        flex-flow:column wrap;
+        align-content: center;
     }
     
-    .main_container3 > .main3_headbox{
-        width:100%;
-        height:10%;
-        display:flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
-    
+ 
     .main_container3 h3{
         font-size:55px;
     }
     
     
     
-    /* #main3_box1{
+    #main3_box1{
         width:100%;
-        height:75%;
+        height:100%;
         display:flex;
         flex-flow:row wrap;
+        align-items: center;
         justify-content: space-around;
-    } */
+    }
     
     /* .box1_article{
         width:17%;
@@ -882,16 +865,11 @@
         background-color:yellow;
     } */
     
-    .main3_box1{
-        width:100%;
-        height:80%;
-        display:flex;
-        justify-content: space-around;
-    }
+
     .main3_left{
         background-color:white;
-        width:45.8%;
-        height:100%;
+        width:100%;
+        height:80%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -944,17 +922,6 @@
     
     
     
-    .main_container4 > .main3_headbox{
-        width:100%;
-        height:10%;
-        display:flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
-    
-    
-    
     .main_container4 h3{
         font-size:55px;
     }
@@ -981,8 +948,8 @@
     }
     #cont3_left{
             background-color:white;
-            width:45.8%;
-            height:100%;
+            width:95%;
+            height:80%;
             background-image:url(../img/garden_main1.jpg);
             background-size:cover;
             background-position:center;
@@ -1033,17 +1000,6 @@
         flex-flow:row wrap;
         align-content: flex-start;
     }
-    
-    
-    .main_container5 > .main3_headbox{
-        width:100%;
-        height:10%;
-        display:flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
-    
     
     
     
@@ -1124,18 +1080,6 @@
     }
     
     
-    
-    
-    .main_container6 > .main3_headbox{
-        width:100%;
-        height:10%;
-        display:flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
-    
-    
     .main_container6 h3{
         font-size:55px;
     }
@@ -1203,16 +1147,6 @@
     }
     
     
-    
-    
-    .main_container7 > .main3_headbox{
-        width:100%;
-        height:10%;
-        display:flex;
-        align-items: center;
-        justify-content: flex-start;
-        
-    }
     
     
     
@@ -1295,9 +1229,8 @@
     
     
     .cont3_hide{
-        width:45.8%;
-    
-        height:100%;
+        width:100%;
+        height:80%;
         background-size:cover;
         background-position:center;
     }
@@ -2902,9 +2835,8 @@ main > .main_container1{
 
 
 .cont4_hide{
-    width:45.8%;
-
-    height:100%;
+    width:100%;
+    height:80%;
     background-size:cover;
     background-position:center;
 }
@@ -2939,9 +2871,8 @@ main > .main_container1{
 
 
 .cont5_hide{
-    width:45.8%;
-
-    height:100%;
+    width:100%;
+    height:80%;
     background-size:cover;
     background-position:center;
 }
@@ -2978,9 +2909,8 @@ main > .main_container1{
 
 
 .cont6_hide{
-    width:45.8%;
-
-    height:100%;
+    width:100%;
+    height:80%;
     background-size:cover;
     background-position:center;
 }
@@ -3007,9 +2937,8 @@ main > .main_container1{
 }
 
 .cont7_hide{
-    width:45.8%;
-
-    height:100%;
+    width:100%;
+    height:80%;
     background-size:cover;
     background-position:center;
 }

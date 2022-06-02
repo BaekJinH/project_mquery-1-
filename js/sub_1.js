@@ -92,15 +92,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      if($(this).scrollTop() > 1500){
+      if($(this).scrollTop() > 1400){
           $('.left_imgbox2').display='';
           $('.left_imgbox2').fadeIn('slow');
-          $('.left_imgbox2').fadeIn(4500);
+          $('.left_imgbox2').fadeIn(4000);
       }
       else{
           $('.left_imgbox2').display='';
           $('.left_imgbox2').fadeOut('slow');
-          $('.left_imgbox2').fadeOut(4500);
+          $('.left_imgbox2').fadeOut(4000);
 
       }
   })
