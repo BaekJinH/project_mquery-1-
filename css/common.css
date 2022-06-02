@@ -1,5 +1,6 @@
 #wrap{
     width:100%;
+    position:relative
     }
 header{
     width:100%;
@@ -183,7 +184,6 @@ nav{
 .overlay_two{
     display:flex;
     flex-flow:column wrap;
-    margin-left:60px;
     width:216px;
     height:50%;
     color:#b8b8a0;
@@ -242,7 +242,7 @@ nav{
 }
 /* end nav line */
 
-
+/* 
 
 #slider{
     margin:0 auto;
@@ -262,7 +262,7 @@ nav{
 .text p{
     padding-top:28px;
     font-size:35px;
-}
+} */
 /* end slider line */
 
 
@@ -277,7 +277,7 @@ nav{
 /* slide_menu / overlay end line */
 
 
-
+/* 
 #slider_img{
     width:100%;
     height:969px;
@@ -285,7 +285,7 @@ nav{
     background-position:center;
     background-size:cover;
     box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.6);
-}
+} */
 
 
 
