@@ -268,42 +268,6 @@ $(window).ready(function(){
 })
 }
 
-// 분리하기
-
-// if (matchMedia('screen and (min-width:1100px)').matches){
-  
-//   $(document).ready(function(){
-//     $(window).scroll(function(){
-//         if($(this).scrollTop() > 2300){
-//             $('.left_imgbox').display='';
-//             $('.left_imgbox').fadeIn('slow');
-//             $('.left_imgbox').fadeIn(3000);
-//         }
-//         else{
-//             $('.left_imgbox').display='';
-//             $('.left_imgbox').fadeOut('slow');
-//             $('.left_imgbox').fadeOut(3000);
-  
-//         }
-//     })
-//   })
-  
-//   $(document).ready(function(){
-//     $(window).scroll(function(){
-//         if($(this).scrollTop() > 2650){
-//             $('.left_imgbox2').display='';
-//             $('.left_imgbox2').fadeIn('slow');
-//             $('.left_imgbox2').fadeIn(4500);
-//         }
-//         else{
-//             $('.left_imgbox2').display='';
-//             $('.left_imgbox2').fadeOut('slow');
-//             $('.left_imgbox2').fadeOut(4500);
-  
-//         }
-//     })
-//   })
-//   }
 
 
 if (matchMedia('screen and (max-width:699px)').matches){
@@ -494,29 +458,29 @@ if (matchMedia('screen and (max-width:699px)').matches){
   })
 }
 
-// if(matchMedia('screen and (min-width:699px)').matches){
-//     $(window).scroll(
-//         function(){
-//             if($(window).scrollTop() > 1050){
-//                 $('.header').addClass('fix')
-//             }
-//             else{
-//                 $('.header').removeClass('fix')
-//             }
-//         }
-//     )
-// }else{
-//     $(window).scroll(
-//         function(){
-//             if($(window).scrollTop() > 650){
-//                 $('.header').addClass('fix')
-//             }
-//             else{
-//                 $('.header').removeClass('fix')
-//             }
-//         }
-//     )
-// }
+if(matchMedia('screen and (min-width:699px)').matches){
+    $(window).scroll(
+        function(){
+            if($(window).scrollTop() > 1050){
+                $('.header').addClass('fix head')
+            }
+            else{
+                $('.header').removeClass('fix')
+            }
+        }
+    )
+}else{
+    $(window).scroll(
+        function(){
+            if($(window).scrollTop() > 650){
+                $('.header').addClass('fix')
+            }
+            else{
+                $('.header').removeClass('fix')
+            }
+        }
+    )
+}
 
 
 
