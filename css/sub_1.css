@@ -780,9 +780,9 @@
     
     .span_box{
         width:100%;
-        height:10%;
+        height:30%;
         display:flex;
-        flex-flow:row wrap;
+        flex-flow:column wrap;
         justify-content:space-around;
         align-items:center;
     }
@@ -844,7 +844,7 @@
     /* main3 tophead end line */
     .main_container3{
         width:100%;
-        height:600px;
+        height:800px;
         margin:0 auto;
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
@@ -862,14 +862,14 @@
     
     #main3_box1{
         width:100%;
-        height:100%;
+        height:90%;
         display:flex;
         flex-flow:row wrap;
         align-items: center;
         justify-content: space-around;
     }
     #main3_box1 > .span_box > span a{
-        font-size:14px
+        font-size:14px;
     }
     #main3_box2 > .span_box > span a{
         font-size:14px
@@ -885,31 +885,35 @@
     }
     #main3_box1 > .span_box{
         display:flex;
-        flex-flow:row wrap;
+        flex-flow:column wrap;
 
     }
     #main3_box1 > .span_box span:nth-of-type(1){
-        width:30%;
+        width:100%;
         display:block;
         text-align:center;
     }
     #main3_box1 > .span_box span:nth-of-type(2){
-        width:30%;
+        width:100%;
+
         display:block;
         text-align:center;
     }
     #main3_box1 > .span_box span:nth-of-type(3){
-        width:30%;
+        width:100%;
+
         display:block;
         text-align:center;
     }
     #main3_box1 > .span_box span:nth-of-type(4){
-        width:45%;
+        width:100%;
+
         display:block;
         text-align:center;
     }
     #main3_box1 > .span_box span:nth-of-type(5){
-        width:45%;
+        width:100%;
+
         display:block;
         text-align:center;
     }
@@ -927,7 +931,7 @@
     .main3_left{
         background-color:white;
         width:100%;
-        height:80%;
+        height:70%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -969,7 +973,7 @@
     
     .main_container4{
         width:100%;
-        height:600px;
+        height:800px;
         margin:0 auto;
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
@@ -984,18 +988,24 @@
         font-size:55px;
     }
     #main3_box2 > .span_box{
+        width:100%;
+        height:30%;
         display:flex;
-        flex-flow:row wrap;
+        flex-flow:column wrap;
+        justify-content:space-around;
+        align-items:center;
 
     }
     #main3_box2 > .span_box span:nth-of-type(4){
-        width:45%;
+        width:100%;
+
         display:block;
         text-align:center;
     }
     #main3_box2 > .span_box span:nth-of-type(5){
         display:block;
-        width:40%;
+        width:100%;
+
         text-align:center;
     }
     #cont4_left{
@@ -1008,7 +1018,7 @@
     
     #main3_box2{
         width:100%;
-        height:100%;
+        height:90%;
         display:flex;
         flex-flow:row wrap;
         align-items: center;
@@ -1065,7 +1075,8 @@
     
     .main_container5{
         width:100%;
-        height:600px;
+        height:800px;
+
         margin:0 auto;
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
@@ -1090,9 +1101,12 @@
     }
     
     #main3_box3 > .span_box{
+        width:100%;
+        height:30%;
         display:flex;
-        flex-flow:row wrap;
-
+        flex-flow:column wrap;
+        justify-content:space-around;
+        align-items:center;
     }
     #main3_box3 > .span_box span:nth-of-type(1){
         width:30%;
@@ -1122,7 +1136,7 @@
     
     #main3_box3{
         width:100%;
-        height:100%;
+        height:90%;
         display:flex;
         flex-flow:row wrap;
         align-items: center;
@@ -1174,7 +1188,8 @@
     
     .main_container6{
         width:100%;
-        height:600px;
+        height:800px;
+
         margin:0 auto;
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
@@ -1190,8 +1205,12 @@
     
     
     #main3_box3 > .span_box{
+        width:100%;
+        height:30%;
         display:flex;
-        flex-flow:row wrap;
+        flex-flow:column wrap;
+        justify-content:space-around;
+        align-items:center;
 
     }
     #main3_box4 > .span_box span:nth-of-type(1){
@@ -1267,7 +1286,8 @@
     
     .main_container7{
         width:100%;
-        height:600px;
+        height:800px;
+
         margin:0 auto;
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
@@ -1295,7 +1315,7 @@
     
     #main3_box5{
         width:100%;
-        height:100%;
+        height:90%;
         display:flex;
         flex-flow:row wrap;
         align-items: center;
@@ -1360,7 +1380,7 @@
     
     
     .cont3_hide{
-        width:100%;
+        width:95%;
         height:80%;
         background-size:cover;
         background-position:center;
@@ -1900,13 +1920,13 @@ nav{
 #slider{
     margin:0 auto;
     width:100%;
-    height:900px;
+    height:960px;
     position:relative;
 
 }
 #slider_img{
     width:100%;
-    height:969px;
+    height:960px;
     background-image:url(../img/sub_slide.jpg);
     background-position:center;
     background-size:cover;
@@ -1922,24 +1942,24 @@ nav{
     color:White;
     text-align:center;
     left: 50%;
-    top:50%;
+    top:40%;
     transform:translate(-50%,-50%)
 }
 @keyframes fade {
     0%{
         opacity:0;
-        top:30%;
+        top:20%;
     }
     100%{
         opacity:1;
-        top:50%;
+        top:40%;
     }
 }
 
 
 
 .text h1{
-    font-size:80px;
+    font-size:110px;
     margin-bottom:30px;
 }
 .down{
@@ -3553,7 +3573,7 @@ footer{
     .main1_con > .main1_img{
         position:absolute;
         width:100%;
-        height:450px;
+        height:75%;
         overflow:hidden;
         box-shadow:inset 0 0 0 500px rgba(0,0,0,0.4);
         cursor:pointer;

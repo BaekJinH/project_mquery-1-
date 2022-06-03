@@ -273,7 +273,7 @@ $(window).ready(function(){
 if (matchMedia('screen and (max-width:699px)').matches){
   $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 2100){
+        if($(this).scrollTop() > 2000){
             $('#cont3_left').display='';
             $('#cont3_left').fadeIn('slow');
             $('#cont3_left').fadeIn(3000);
@@ -290,7 +290,7 @@ if (matchMedia('screen and (max-width:699px)').matches){
   
   $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 2900){
+        if($(this).scrollTop() > 3100){
             $('#cont4_left').display='';
             $('#cont4_left').fadeIn('slow');
             $('#cont4_left').fadeIn(3000);
@@ -309,7 +309,7 @@ if (matchMedia('screen and (max-width:699px)').matches){
   
   $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 3800){
+        if($(this).scrollTop() > 4200){
             $('#cont5_left').display='';
             $('#cont5_left').fadeIn('slow');
             $('#cont5_left').fadeIn(3000);
@@ -329,7 +329,7 @@ if (matchMedia('screen and (max-width:699px)').matches){
   
   $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 4700){
+        if($(this).scrollTop() > 5200){
             $('#cont6_left').display='';
             $('#cont6_left').fadeIn('slow');
             $('#cont6_left').fadeIn(3000);
@@ -348,7 +348,7 @@ if (matchMedia('screen and (max-width:699px)').matches){
   
   $(document).ready(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() > 5600){
+        if($(this).scrollTop() > 6300){
             $('#cont7_left').display='';
             $('#cont7_left').fadeIn('slow');
             $('#cont7_left').fadeIn(3000);
