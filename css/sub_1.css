@@ -330,26 +330,30 @@
     
     main > .main_container1{
         width:100%;
-        height:300px;
+        height:600px;
         margin:0 auto;
         margin-top:50px;
         display:flex;
+        flex-flow:column wrap;
         justify-content:space-around;
         position:relative;
         align-items:center;
     }
     .main_container1 > .main1_con{
-        width:17%;
-        height:100%;
-        display:none;
+        width:100%;
+        height:20%;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content: center;
+        align-items:center;
         position:relative;
         box-sizing:border-box
     }
     
     .main1_con > .main1_img{
-        position:absolute;
-        width:100%;
-        height: 50%;
+        position:relative;
+        width:50%;
+        height: 90%;
         overflow:hidden;
         box-shadow:inset 0 0 0 500px rgba(0,0,0,0.4);
         cursor:pointer;
@@ -359,11 +363,11 @@
     @keyframes fall {
         0%{
             opacity:0;
-            bottom:40%;
+            bottom:20%;
         }
         100%{
             opacity:1;
-            bottom:50%;
+            bottom:0%;
         }
     }
     
@@ -408,15 +412,16 @@
     
     
     .main1_head{
-        width:100%;
+        width:50%;
         height:65%;
         display:flex;
-        flex-flow:column;
+        flex-flow:row;
         align-items:center;
-        justify-content: flex-end;
+        justify-content: center;
         text-align:center;
-        font-size:15px;
+        font-size:21px;
         font-weight:bold;
+        margin:0 auto;
     }
     
     
@@ -1243,7 +1248,7 @@
     }
     #main3_box4{
         width:100%;
-        height:100%;
+        height:90%;
         display:flex;
         flex-flow:row wrap;
         align-items: center;
@@ -3267,7 +3272,7 @@ footer{
         width:100%;
         top:0;
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color:#b8b8a0;
         z-index:99999999999;
     }
