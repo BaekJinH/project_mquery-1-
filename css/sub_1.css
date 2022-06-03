@@ -255,7 +255,7 @@
     }
     #slider_img{
         width:100%;
-        height:650px;
+        height:500px;
         background-image:url(../img/sub_slide.jpg);
         background-position:center;
         background-size:cover;
@@ -287,7 +287,7 @@
     
     
     .text h1{
-        font-size:80px;
+        font-size:55px;
     }
     .down{
         background-image:url(../img/slide_dowm.png);
@@ -296,7 +296,7 @@
         background-position:center;
         background-size:cover;
         position:absolute;
-        left:40%;
+        left:30%;
         top:100%;
         cursor:pointer
     }
@@ -916,8 +916,8 @@
         border-top:1px solid #eee;
         border-bottom:1px solid #eee;
         display:flex;
-        flex-flow:row wrap;
-        align-content: flex-start;
+        flex-flow:column wrap;
+        align-content: center;
     }
     
     
@@ -928,8 +928,8 @@
     
     
     #cont4_left{
-        width:45.8%;
-        height:100%;
+        width:95%;
+        height:80%;
         background-image:url(../img/main1_img-2.jpg);
         background-size:cover;
         background-position:center;
@@ -937,8 +937,10 @@
     
     #main3_box2{
         width:100%;
-        height:80%;
+        height:100%;
         display:flex;
+        flex-flow:row wrap;
+        align-items: center;
         justify-content: space-around;
     }
     #main3_box2 > .main3_left:nth-of-type(1){
@@ -957,8 +959,8 @@
     
     .main3_left{
         background-color:white;
-        width:20%;
-        height:100%;
+        width:100%;
+        height:80%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -1009,9 +1011,8 @@
     
     
     #cont5_left{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-image:url(../img/main1_img-3.jpg);
         background-size:cover;
         background-position:center;
@@ -1020,8 +1021,10 @@
     
     #main3_box3{
         width:100%;
-        height:80%;
+        height:100%;
         display:flex;
+        flex-flow:row wrap;
+        align-items: center;
         justify-content: space-around;
     }
     
@@ -1033,8 +1036,8 @@
     
     .main3_left{
         background-color:white;
-        width:20%;
-        height:100%;
+        width:100%;
+        height:80%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -1087,17 +1090,18 @@
     
     
     #cont6_left{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-image:url(../img/main1_img-5.jpg);
         background-size:cover;
         background-position:center;
     }
     #main3_box4{
         width:100%;
-        height:80%;
+        height:100%;
         display:flex;
+        flex-flow:row wrap;
+        align-items: center;
         justify-content: space-around;
     }
     
@@ -1108,8 +1112,8 @@
     }
     .main3_left{
         background-color:white;
-        width:20%;
-        height:100%;
+        width:100%;
+        height:80%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -1155,9 +1159,8 @@
     }
     
     #cont7_left{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-image:url(../img/main1_img-4.jpg);
         background-size:cover;
         background-position:center;
@@ -1166,8 +1169,10 @@
     
     #main3_box5{
         width:100%;
-        height:80%;
+        height:100%;
         display:flex;
+        flex-flow:row wrap;
+        align-items: center;
         justify-content: space-around;
     }
     
@@ -1179,8 +1184,8 @@
     
     .main3_left{
         background-color:white;
-        width:20%;
-        height:100%;
+        width:100%;
+        height:80%;
         background-image:url(../img/main1_img-1.jpg);
         background-size:cover;
         background-position:center;
@@ -1264,9 +1269,8 @@
     
     
     .cont4_hide{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-size:cover;
         background-position:center;
     }
@@ -1301,9 +1305,8 @@
     
     
     .cont5_hide{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-size:cover;
         background-position:center;
     }
@@ -1340,9 +1343,8 @@
     
     
     .cont6_hide{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-size:cover;
         background-position:center;
     }
@@ -1369,9 +1371,8 @@
     }
     
     .cont7_hide{
-        width:45.8%;
-    
-        height:100%;
+        width:95%;
+        height:80%;
         background-size:cover;
         background-position:center;
     }
@@ -1801,11 +1802,11 @@ nav{
 @keyframes fade {
     0%{
         opacity:0;
-        top:15%;
+        top:30%;
     }
     100%{
         opacity:1;
-        top:30%;
+        top:50%;
     }
 }
 
@@ -3368,11 +3369,11 @@ footer{
     @keyframes fade {
         0%{
             opacity:0;
-            top:15%;
+            top:30%;
         }
         100%{
             opacity:1;
-            top:30%;
+            top:50%;
         }
     }
     
