@@ -15,44 +15,58 @@
     <div id="wrap">
         <div class="scroll_top" onclick="top()"></div>
             <div id="slider_img">
-                <ul class="slide_img"> 
+                <ul class="slide_img">
+                    <li class="slide_box slide_main">
+                        <div class="text">
+                            <h1>PROJECTS</h1>
+                            <h2>DETAILS</h2>
+                            <div class="down" onclick="down()"></div>
+                        </div>
+                        <img src="img/garden_main.jpg" alt="">
+                    </li>
                     <li class="slide_box">
                         <div>
                             <h3>Garden</h3>
                             <span>Sub_1</span>
                         </div>
-                        <!-- <img src="img/garden_main.jpg" alt=""> -->
+                        <img src="img/garden_main2.jpg" alt="">
                     </li>
                     <li class="slide_box">
                         <div>
                             <h3>Hotel</h3>
                             <span>Sub_2</span>
                         </div>
-                        <!-- <img src="img/main_slide-3.jpg" alt=""> -->
+                        <img src="img/main_slide-3.jpg" alt="">
                     </li>
                     <li class="slide_box">
                         <div>
                             <h3>interiors</h3>
                             <span>Sub_3</span>
                         </div>
-                        <!-- <img src="img/main1_img-5.jpg" alt=""> -->
+                        <img src="img/main1_img-5.jpg" alt="">
                     </li>
                     <li class="slide_box">
                         <div>
                             <h3>Retail</h3>
                             <span>Sub_4</span>
                         </div>
-                        <!-- <img src="img/main_under4.jpeg" alt=""> -->
+                        <img src="img/main_under4.jpeg" alt="">
                     </li>
                     <li class="slide_box">
                         <div>
                             <h3>Yachts</h3>
                             <span>Sub_5</span>
                         </div>
-                        <!-- <img src="img/main_under2.png" alt=""> -->
+                        <img src="img/main_under2.png" alt="">
                     </li>
                 </ul>
                 <!--slide-->
+                <!-- controls -->
+                <div class="controls_wrap">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+               <!-- controls -->
                 <header>
                     <div class="head_cont header">
                         <div class="logo"><a href="index.html">
@@ -87,35 +101,22 @@
                             </div>
                         </div>
                     </div>
-                
-
                 </header>
-                <!-- controls -->
-                    <div class="controls_wrap">
-                        <div class="left"></div>
-                        <div class="right"></div>
-                    </div>
-                <!-- controls -->
+  
                 <div id="slider">
 
-                    <div class="text">
-                        <h1>PROJECTS</h1>
-                        <h2>DETAILS</h2>
-                        <div class="down" onclick="down()"></div>
-                    </div>
-                
 
                 </div> 
             </div>
             <div class="search_box">
                 <input type="text" placeholder="Search.." id="search">
                 <div class="btn_box">
-                    <div class="btn_hover"><button>All</button></div>
-                    <div class="btn_hover"><button>Garden</button></div>
-                    <div class="btn_hover"><button>Hotel</button></div>
-                    <div class="btn_hover"><button>Interiors</button></div>
-                    <div class="btn_hover"><button>Retail</button></div>
-                    <div class="btn_hover"><button>Yatch</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover1 click">All</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover2">Garden</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover3">Hotel</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover4">Interiors</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover5">Retail</button></div>
+                    <div class="btn_hover"><button class="btn_click btn_hover6">Yatch</button></div>
                 </div>
             </div>
             <main>

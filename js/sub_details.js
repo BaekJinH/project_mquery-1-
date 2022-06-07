@@ -70,6 +70,65 @@ $(function(){
 
 
 
+function prev(){
+    $('.slide_img li:last').prepentTo('.slide_img')
+    $('.slide_img').css('margin-left','-1902');
+    $('.slide_img').stop().animate({'marginLeft':'0'},800)
+}
+function next(){
+    $('.slide_img').stop().animate({marginLeft:-1902}, function(){
+    $('.slide_img li:first').appendTo('.slide_img');
+    $('.slide_img').css({marginLeft:0});
+    });
+}
+function slide(){
+    $('.slide_img').stop().animate({marginLeft:-1902}, function(){
+    $('.slide_img li:first').appendTo('.slide_img');
+    $('.slide_img').css({marginLeft:0});
+    });
+}
+setInterval(slide, 3000);
+$('.left').click(function(){
+    prev();
+    });
+$('.right').click(function(){
+    next();
+    });
+
+
+$(function(){
+    $('.btn_click').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover1').removeClass('click');
+        // $(this).siblings().removeClass('click')
+    });
+})
+$(function(){
+    $('.btn_hover1').click(function(){
+        $('main').children().fadeIn('slow')
+    })
+    $('.btn_hover2').click(function(){
+        $('#garden-cont').fadeIn('slow')
+        $('main > #garden-cont').siblings().fadeOut('slow')
+    })
+    $('.btn_hover3').click(function(){
+        $('#hotel-cont').fadeIn('slow')
+        $('main > #hotel-cont').siblings().fadeOut('slow')
+    })
+    $('.btn_hover4').click(function(){
+        $('#interi-cont').fadeIn('slow')
+        $('main > #interi-cont').siblings().fadeOut('slow')
+    })
+    $('.btn_hover5').click(function(){
+        $('#retail-cont').fadeIn('slow')
+        $('main > #retail-cont').siblings().fadeOut('slow')
+    })
+    $('.btn_hover6').click(function(){
+        $('#yatch-cont').fadeIn('slow')
+        $('main > #yatch-cont').siblings().fadeOut('slow')
+    })
+})
+
 // 밑 fix 잠시 보류
 
 // if(matchMedia('screen and (min-width:699px)').matches){

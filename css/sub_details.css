@@ -253,7 +253,8 @@ nav{
     position:relative;
 
 }
-#slider .text{
+.text{
+    z-index:999;
     position:absolute;
     color:White;
     top:50%;
@@ -314,16 +315,44 @@ nav{
 }
 
 
+#slider_img{
+    width:100%;
+    height:969px;
+    position:relative;
+    /* overflow:hidden; */
+}
+.slide_img{
+    width:11412px;
+}
+.slide_img li{
+    width:1902px;
+    height:969px;
+    float:left;
+}
+.slide_img img{
+    width:100%;
+    height:100%;
+}
 
 
 .slide_img li{
     float:left;
     color:white;
+    width:100%;
 }
+.slide_box{
+    width:100%;
+    height:100%;
+}
+
+
 .slide_box div{
     position:absolute;
 }
-
+.slide_box img{
+    width:100%;
+    height:100%;
+}
 /* controls */
 
 .controls_wrap{
@@ -338,24 +367,24 @@ nav{
     background-size:cover;
     position:absolute;
     left:0;
-    top:43%;
+    top:40%;
     transform:rotate(90deg);
     cursor:pointer;;
 }
 .controls_wrap .right{
-    width:75px;
+    width:100px;
     height:100px;
     background-image:url(../img/slide_dowm.png);
     background-size:cover;
     position:absolute;
     right:0;
-    top:43%;
+    top:40%;
     transform:rotate(-90deg);
     cursor:pointer;
 }
 .controls_wrap div:hover{
     opacity:0.5;
-    transition:0.3s
+    transition:0.3s;
 }
 
 
@@ -412,7 +441,7 @@ input[type="text"]{
     background-position:right;
 }
 .btn_box{
-    width:70%;
+    width:80%;
     height:auto;
     display:flex;
     flex-flow:row nowrap;
@@ -420,18 +449,20 @@ input[type="text"]{
     align-items: center;
 }
 .btn_hover{
-    width:auto;
+    width:150px;
     height:75px;
     displaY:flex;
     align-items: flex-end;
     justify-content: center;
     position:relative;
+    background-color:#fafaf8;
 }
 .btn_hover:hover{
     animation:top 0.5s;
-
+    box-shadow:0px 20px 20px rgba(0,0,0,0.2);
 }
 .btn_box button{
+    width:100%;
     height:100%;
     display:block;
     cursor:pointer;
@@ -449,8 +480,10 @@ input[type="text"]{
         bottom:50%;
     }
 }
-    
-
+.click{
+    background-color: #b8b8a0 !important;
+    color:white;
+}
 
 /* .btn_box button:after{
     display:block;
