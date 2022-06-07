@@ -28,23 +28,6 @@ $(document).ready(function(){
     $('.text').fadeIn(3000)
 })
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
-            $('.main1_con').display='';
-            $('.main1_con').fadeIn('slow');
-            $('.main1_con').fadeIn(3000);
-        }
-        else{
-            $('.main1_con').display='';
-            $('.main1_con').fadeOut('slow');
-            $('.main1_con').fadeOut(3000);
-
-        }
-    })
-})
-
-
 
 if (matchMedia('screen and (min-width:699px)').matches){
     function open_menu(){
@@ -62,6 +45,30 @@ if (matchMedia('screen and (min-width:699px)').matches){
         document.getElementsByClassName('slide_menu')[0].style.width='0%'
     }
 }
+
+$(function(){
+    $('#slider_img').hover(function(){
+        $('.controls_wrap').fadeIn(1200)
+    },function(){
+        $('.controls_wrap').hide()
+    })
+})
+
+
+
+$(function(){
+    $('input').on('keyup',function(){
+        var value= $(this).val().toUpperCase();
+        $('main div').attr(value)
+        $('main').children().filter(function(){
+            $(this).toggle($(this).text().toUpperCase().indexOf(value) > -1)
+        })
+    })
+})
+
+
+
+
 
 // 밑 fix 잠시 보류
 

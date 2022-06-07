@@ -482,6 +482,15 @@ if(matchMedia('screen and (min-width:699px)').matches){
     )
 }
 
+// $(function(){
+//   $('.cont3_hide').click(function(){
+//     $(loaction).attr('href','')
+//   })
+// })
+// 페이지간 이동하기
+
+
+
 
 
 // if (matchMedia('screen and (min-width:1100px)').matches){

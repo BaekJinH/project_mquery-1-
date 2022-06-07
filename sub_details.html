@@ -13,17 +13,46 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="wrap">
-            <div class="scroll_top" onclick="top()"></div>
+        <div class="scroll_top" onclick="top()"></div>
             <div id="slider_img">
-                <!--d d-->
-                <ul> 
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="slide_img"> 
+                    <li class="slide_box">
+                        <div>
+                            <h3>Garden</h3>
+                            <span>Sub_1</span>
+                        </div>
+                        <!-- <img src="img/garden_main.jpg" alt=""> -->
+                    </li>
+                    <li class="slide_box">
+                        <div>
+                            <h3>Hotel</h3>
+                            <span>Sub_2</span>
+                        </div>
+                        <!-- <img src="img/main_slide-3.jpg" alt=""> -->
+                    </li>
+                    <li class="slide_box">
+                        <div>
+                            <h3>interiors</h3>
+                            <span>Sub_3</span>
+                        </div>
+                        <!-- <img src="img/main1_img-5.jpg" alt=""> -->
+                    </li>
+                    <li class="slide_box">
+                        <div>
+                            <h3>Retail</h3>
+                            <span>Sub_4</span>
+                        </div>
+                        <!-- <img src="img/main_under4.jpeg" alt=""> -->
+                    </li>
+                    <li class="slide_box">
+                        <div>
+                            <h3>Yachts</h3>
+                            <span>Sub_5</span>
+                        </div>
+                        <!-- <img src="img/main_under2.png" alt=""> -->
+                    </li>
                 </ul>
+                <!--slide-->
                 <header>
                     <div class="head_cont header">
                         <div class="logo"><a href="index.html">
@@ -58,139 +87,74 @@
                             </div>
                         </div>
                     </div>
+                
+
                 </header>
+                <!-- controls -->
+                    <div class="controls_wrap">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                <!-- controls -->
                 <div id="slider">
+
                     <div class="text">
                         <h1>PROJECTS</h1>
+                        <h2>DETAILS</h2>
                         <div class="down" onclick="down()"></div>
                     </div>
+                
+
                 </div> 
             </div>
+            <div class="search_box">
+                <input type="text" placeholder="Search.." id="search">
+                <div class="btn_box">
+                    <div class="btn_hover"><button>All</button></div>
+                    <div class="btn_hover"><button>Garden</button></div>
+                    <div class="btn_hover"><button>Hotel</button></div>
+                    <div class="btn_hover"><button>Interiors</button></div>
+                    <div class="btn_hover"><button>Retail</button></div>
+                    <div class="btn_hover"><button>Yatch</button></div>
+                </div>
+            </div>
             <main>
-                <div class="main_container1">
-                    <div class="main1_con">
-                        <div class="main1_img">
-                            <img src="img/main1_img-1.jpg" alt="" onclick="anc1()">
+                <div id="garden-cont">
+                    <div class="inner_cont">
+                        <div class="pamp_box"></div>
+                        <div class="img_box">
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
                         </div>
-                        <div class="main1_head">
-                            <h5>GARDEN</h5>
-                        </div>
-                    </div>
-                    <div class="main1_con">
-                        <div class="main1_img main1_img2">
-                            <img src="img/main1_img-2.jpg" alt="" onclick="anc1()">
-
-                        </div>
-                        <div class="main1_head">
-                            <h5>HOTEL</h5>
-                        </div>
-                    </div>
-                    <div class="main1_con">
-                        <div class="main1_img main1_img3">
-                            <img src="img/main1_img-3.jpg" alt="" onclick="anc1()">
-
-                        </div>
-                        <div class="main1_head">
-                            <h5>INTERIORS</h5>
-                        </div>
-                    </div>
-                    <div class="main1_con">
-                        <div class="main1_img main1_img4">
-                            <img src="img/main1_img-5.jpg" alt="" onclick="anc1()">
-
-                        </div>
-                        <div class="main1_head">
-                            <h5>RETAIL</h5>
-                        </div>
-                    </div>
-                    <div class="main1_con">
-                        <div class="main1_img main1_img5">
-                            <img src="img/main1_img-4.jpg" alt="" onclick="anc1()">
-
-                        </div>
-                        <div class="main1_head">
-                            <h5>YACHTS</h5>
-                        </div>
+                        <h2>Garden</h2>
                     </div>
                 </div>
-                <div class="main_container2">
-                    <div class="main2_box">
-                        <div class="main2_txt">
-                            <div class="main2_subtxt">
-                                <h4>FROM</h4>
-                                <h2>CONCEPT</h2>
-                                <h4>TO</h4>
-                                <h2>COMPLETION</h2>
-                                <p>
-                                    Anouska Hempel's vision of a utopian world encompasses all elements of a life of design from landscapes, gardens, interiors and yachts to hotels, retail, couture and more.
-                                    <br>
-                                    <br>
-                                    "I am influenced by art and travel, by how I'm pushed and pulled. I find inspiration in every corner - from museums to opera, from east to west and beyond.
-                                    <br>
-                                    <br>
-                                    Each space holds a story of its own and dictates how that story should be told. I then create the backdrop for other people to live their glorious lives in. It’s like a play that keeps on going and I give them the stage and the steam to keep running."
-                                </p>
-                            </div>
-                        </div>
+                <div id="hotel-cont">
+                    <div class="inner_cont">
+                        <div class="pamp_box"></div>
+                        <h2>Hotel</h2>
                     </div>
                 </div>
-                <div class="main_container3">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
-                    </div>
-                    <div class="main3_box" id="main3_box1">
-                        <div class="box1_article">
-                            <div class="box1_img"></div>
-                            <span>WILTSHIRE</span>
-                        </div>
-                        <div class="box1_article">
-                            <div class="box1_img"></div>
-                            <span>HOLLAND PARK</span>
-                        </div>
-                        <div class="box1_article">
-                            <div class="box1_img"></div>
-                            <span>LIECHTENSTEIN</span>
-                        </div>
-                        <div class="box1_article">
-                            <div class="box1_img"></div>
-                            <span>HAMPSHIRE</span>
-                        </div>
-                        <div class="box1_article">
-                            <div class="box1_img"></div>
-                            <span>BATH</span>
-                        </div>
+                <div id="interi-cont">
+                    <div class="inner_cont">
+                        <div class="pamp_box"></div>
+                        <h2>Interiors</h2>
                     </div>
                 </div>
-                <div class="main_container4">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
-                    </div>
-                    <div class="main3_box" id="main3_box2">
-                        
+                <div id="retail-cont">
+                    <div class="inner_cont">
+                        <div class="pamp_box"></div>
+                        <h2>Retail</h2>
                     </div>
                 </div>
-                <div class="main_container5">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
-                    </div>
-                    <div class="main3_box" id="main3_box3">
-                        
-                    </div>
-                </div>
-                <div class="main_container6">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
-                    </div>
-                    <div class="main3_box" id="main3_box4">
-                        
-                    </div>
-                </div>
-                <div class="main_container7">
-                    <div class="main3_headbox">
-                        <h3>GARDENS</h3>
-                    </div>
-                    <div class="main3_box" id="main3_box5">
-                        
+                <div id="yatch-cont">
+                    <div class="inner_cont">
+                        <div class="pamp_box"></div>
+                        <h2>Yatch</h2>
                     </div>
                 </div>
             </main>
@@ -221,9 +185,6 @@
                         </div>
                     </div>
                 </div>
-                    <div class="foot_under">
-                        <span>Copyright ©2022 All rights reserved | This template is made with  by Colorlib</span>
-                    </div>
             </footer>
     </div>
 </body>
