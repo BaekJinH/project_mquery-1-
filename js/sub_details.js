@@ -48,9 +48,9 @@ if (matchMedia('screen and (min-width:699px)').matches){
 
 $(function(){
     $('#slider_img').hover(function(){
-        $('.controls_wrap').fadeIn(1200)
+        $('.controls_wrap').fadeIn(300)
     },function(){
-        $('.controls_wrap').hide()
+        $('.controls_wrap').fadeOut(300)
     })
 })
 
@@ -63,71 +63,179 @@ $(function(){
         $('main').children().filter(function(){
             $(this).toggle($(this).text().toUpperCase().indexOf(value) > -1)
         })
+        $('input').on('keyup',function(){
+            $('.btn_click').not('.btn_hover1').removeClass('click');
+            $('.btn_hover1').addClass('click');
+            var value2 = $(this).val().toUpperCase();
+            // $('.btn_click').filter(function(){
+            //     if(value2 == $('.btn_click')){
+            //         $('.btn_click').addClass('click')
+            //     }
+            // })
+        })
     })
 })
-
-
-
-
-
-function prev(){
-    $('.slide_img li:last').prepentTo('.slide_img')
-    $('.slide_img').css('margin-left','-1902');
-    $('.slide_img').stop().animate({'marginLeft':'0'},800)
-}
-function next(){
-    $('.slide_img').stop().animate({marginLeft:-1902}, function(){
-    $('.slide_img li:first').appendTo('.slide_img');
-    $('.slide_img').css({marginLeft:0});
-    });
-}
-function slide(){
-    $('.slide_img').stop().animate({marginLeft:-1902}, function(){
-    $('.slide_img li:first').appendTo('.slide_img');
-    $('.slide_img').css({marginLeft:0});
-    });
-}
-setInterval(slide, 3000);
-$('.left').click(function(){
-    prev();
-    });
-$('.right').click(function(){
-    next();
-    });
-
-
+// $(function(){
+//     $('input').on('keyup',function(){
+//         var value2 = $(this).val().toUpperCase();
+//         $('.btn_click').attr(value)
+//         $('.btn_click').filter(function(){
+//             $(this).toggle($(this).text().toUpperCase().indexOf(value2) > -1)
+//         })
+//     })
+// })
 $(function(){
-    $('.btn_click').click(function(){
+    var input = $('input');
+    $('.btn_hover1').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'All')
+    })
+    $('.btn_hover2').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'Garden')
+    })
+    $('.btn_hover3').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'Hotel')
+    })
+    $('.btn_hover4').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'Interiors')
+    })
+    $('.btn_hover5').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'Retail')
+    })
+    $('.btn_hover6').on('click',function(){
+        $("input[type=text]").val("")
+        input.val(input.val()+'Yatchs')
+    })
+    $('.btn_hover1').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover2').removeClass('click');
+        $('.btn_hover3').removeClass('click');
+        $('.btn_hover4').removeClass('click');
+        $('.btn_hover5').removeClass('click');
+        $('.btn_hover6').removeClass('click');
+    });
+    $('.btn_hover2').click(function(){
         $(this).addClass('click');
         $('.btn_hover1').removeClass('click');
-        // $(this).siblings().removeClass('click')
+        $('.btn_hover3').removeClass('click');
+        $('.btn_hover4').removeClass('click');
+        $('.btn_hover5').removeClass('click');
+        $('.btn_hover6').removeClass('click');
+    });
+    $('.btn_hover3').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover1').removeClass('click');
+        $('.btn_hover2').removeClass('click');
+        $('.btn_hover4').removeClass('click');
+        $('.btn_hover5').removeClass('click');
+        $('.btn_hover6').removeClass('click');
+    });
+    $('.btn_hover4').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover1').removeClass('click');
+        $('.btn_hover3').removeClass('click');
+        $('.btn_hover2').removeClass('click');
+        $('.btn_hover5').removeClass('click');
+        $('.btn_hover6').removeClass('click');
+    });
+    $('.btn_hover5').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover1').removeClass('click');
+        $('.btn_hover3').removeClass('click');
+        $('.btn_hover4').removeClass('click');
+        $('.btn_hover2').removeClass('click');
+        $('.btn_hover6').removeClass('click');
+    });
+    $('.btn_hover6').click(function(){
+        $(this).addClass('click');
+        $('.btn_hover1').removeClass('click');
+        $('.btn_hover3').removeClass('click');
+        $('.btn_hover4').removeClass('click');
+        $('.btn_hover2').removeClass('click');
+        $('.btn_hover5').removeClass('click');
     });
 })
 $(function(){
     $('.btn_hover1').click(function(){
-        $('main').children().fadeIn('slow')
+        $('main').children().fadeIn(500)
     })
     $('.btn_hover2').click(function(){
-        $('#garden-cont').fadeIn('slow')
-        $('main > #garden-cont').siblings().fadeOut('slow')
+        $('#garden-cont').fadeIn(500)
+        $('main > #garden-cont').siblings().fadeOut(500)
     })
     $('.btn_hover3').click(function(){
-        $('#hotel-cont').fadeIn('slow')
-        $('main > #hotel-cont').siblings().fadeOut('slow')
+        $('#hotel-cont').fadeIn(500)
+        $('main > #hotel-cont').siblings().fadeOut(500)
     })
     $('.btn_hover4').click(function(){
-        $('#interi-cont').fadeIn('slow')
-        $('main > #interi-cont').siblings().fadeOut('slow')
+        $('#interi-cont').fadeIn(500)
+        $('main > #interi-cont').siblings().fadeOut(500)
     })
     $('.btn_hover5').click(function(){
-        $('#retail-cont').fadeIn('slow')
-        $('main > #retail-cont').siblings().fadeOut('slow')
+        $('#retail-cont').fadeIn(500)
+        $('main > #retail-cont').siblings().fadeOut(500)
     })
     $('.btn_hover6').click(function(){
-        $('#yatch-cont').fadeIn('slow')
-        $('main > #yatch-cont').siblings().fadeOut('slow')
+        $('#yatch-cont').fadeIn(500)
+        $('main > #yatch-cont').siblings().fadeOut(500)
     })
 })
+
+$(function(){
+    $('input:text').focus('click',function(){
+        $('.popup').css({'height':'250px','display':'block'})
+    })
+    $('input').blur(function(){
+        $('.popup').css({'height':'0%'});
+    })
+
+
+})
+
+
+
+$(function(){
+    function left(){
+        $('.slide_img li:last').prependTo('.slide_img');
+        $('.slide_img').css({marginLeft:'-100vw'});
+        $('.slide_img').stop().animate({marginLeft:0}, 1000);
+        // 이전으로 가는 버튼은 문장의 배치가 중요하다 배치가 얽히면 copy가 되지 않아 제대로 작동을 안 함
+    }
+    function right(){
+        $('.slide_img').stop().animate({marginLeft:'-100vw'}, 1000,function(){
+            $('.slide_img li:first').appendTo('.slide_img');
+            $('.slide_img').css({marginLeft:0});
+        });
+    }
+    function slide(){
+        $('.slide_img').stop().animate({marginLeft:'-100vw'}, 1000,function(){
+            $('.slide_img li:first').appendTo('.slide_img');
+            $('.slide_img').css({marginLeft:0});
+        });
+    }
+    
+    setInterval(slide, 5000);
+    $('.left').click(function(){
+        left();
+        });
+    $('.right').click(function(){
+        right();
+        });
+})
+
+
+
+
+
+
+
+
+
+
 
 // 밑 fix 잠시 보류
 
