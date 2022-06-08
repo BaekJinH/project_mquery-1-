@@ -384,19 +384,29 @@ nav{
     top:0;
     box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.7);
 }
-.imgbox2:nth-of-type(2){
+.imgbox2{
+    background-size:cover;
+    background-position: center;
     background-image: url(../img/cont3_holl.jpg)
 }
-.imgbox3:nth-of-type(3){
+.imgbox3{
+    background-size:cover;
+    background-position: center;
     background-image: url(../img/main_under3-1.jpg)
 }
-.imgbox4:nth-of-type(4){
+.imgbox4{
+    background-size:cover;
+    background-position: center;
     background-image: url(../img/main3_1.jpg)
 }
-.imgbox5:nth-of-type(5){
+.imgbox5{
+    background-size:cover;
+    background-position: center;
     background-image: url(../img/main_under3.png)
 }
-.imgbox6:nth-of-type(6){
+.imgbox6{
+    background-size:cover;
+    background-position: center;
     background-image: url(../img/main1_img-4.jpg)
 }
 
