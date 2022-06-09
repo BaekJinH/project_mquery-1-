@@ -600,7 +600,7 @@
     
     .count_numb{
         width:100%;
-        height:200px;
+        height:180px;
         display:flex;
         flex-flow:row wrap;
         justify-content:space-around;
