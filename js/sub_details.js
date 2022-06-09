@@ -22,11 +22,11 @@ $(document).ready(function(){
 })
 
 
-$(document).ready(function(){
-    $('.text').display='';
-    $('.text').fadeIn('slow')
-    $('.text').fadeIn(3000)
-})
+// $(document).ready(function(){
+//     $('.text').display='';
+//     $('.text').fadeIn('slow')
+//     $('.text').fadeIn(3000)
+// })
 
 
 if (matchMedia('screen and (min-width:699px)').matches){
@@ -75,6 +75,15 @@ $(function(){
         })
     })
 })
+// 두번째만들기
+$(function(){
+    $('input').on('keyup',function(){
+        var value = $(this).val().toUpperCase();
+        $('main div').attr(value)
+    })
+})
+
+
 // $(function(){
 //     $('input').on('keyup',function(){
 //         var value2 = $(this).val().toUpperCase();
@@ -86,6 +95,9 @@ $(function(){
 // })
 $(function(){
     var input = $('input');
+    if(input==undefined){
+        $('.btn_hover1').addClass('click')
+    }
     $('.btn_hover1').on('click',function(){
         $("input[type=text]").val("")
         input.val(input.val()+'All')
@@ -185,18 +197,30 @@ $(function(){
     })
 })
 
+// $(function(){
+//     $('input:text').focus('click',function(){
+//         $('.popup').css({'height':'250px'})
+//     })
+//     $('input:text').blur(function(){
+//         $('.popup').css({'height':'0%'});
+//     })
+// })
+
+
 $(function(){
-    $('input:text').focus('click',function(){
+    $('input:text').mousedown('click',function(){
         $('.popup').css({'height':'250px'})
+        $('.cate_box').css({display:'block'})
+
+        // 한 번 만들어보는 것
+        // $('.btn_box').css({height:'0%'})
     })
-    $('.search_box').blur(function(){
+
+    $('.search_box').mouseleave(function(){
         $('.popup').css({'height':'0%'});
+        $('.cate_box').fadeOut()
     })
-
-
 })
-
-
 
 $(function(){
     function left(){
@@ -231,6 +255,38 @@ $(function(){
 
 
 
+// $(function(){
+//     $('.img_container div').hover(function(){
+//         $('.img_container h3').css({display:'block'})
+//     },function(){
+//         $('.img_container h3').css({display:'none'})
+//     })
+// })
+// $(function(){
+//     $('.img_container div').hover(function(){
+//         $('.')
+//     },function(){
+
+//     })
+// })
+
+
+
+$(function(){
+    $('.img_container div').hover(function(){
+        $(this).find('h3').css({display:''})
+        $(this).find('h3').fadeIn('slow')
+        $(this).find('h3').addClass('drop')
+        // $('.img_container > div > h3').css({top:'50%',left:'50%','transForm':'translate(-50%,-50%)'})
+        // $('.img_container > div > h3').animate({marginTop:'50%'})
+        // $('.img_container > div > h3').animate({top:'50%',left:'50%'},500)
+    },function(){
+        $('.img_container h3').css({display:'none'})
+    })
+})
+        // $('.img_container > div > h3').css({marginTop:'-20px'});
+// var offset = $('.img_container > div > h3').offset({top:'-20%'});
+// $('.img_container > div > h3').animate({scrollTop:offset.top});
 
 
 
