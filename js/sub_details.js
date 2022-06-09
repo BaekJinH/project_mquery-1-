@@ -187,7 +187,7 @@ $(function(){
 
 $(function(){
     $('input:text').focus('click',function(){
-        $('.popup').css({'height':'250px','display':'block'})
+        $('.popup').css({'height':'250px'})
     })
     $('input').blur(function(){
         $('.popup').css({'height':'0%'});
@@ -226,9 +226,6 @@ $(function(){
         right();
         });
 })
-
-
-
 
 
 
