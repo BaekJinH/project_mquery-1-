@@ -340,11 +340,11 @@
         align-items:center;
     }
     .main_container1 > .main1_con{
-        width:100%;
+        width:70%;
         height:20%;
         display:flex;
         flex-flow:row nowrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items:center;
         position:relative;
         box-sizing:border-box
@@ -415,13 +415,14 @@
         width:50%;
         height:65%;
         display:flex;
-        flex-flow:row;
+        flex-flow:column;
         align-items:center;
         justify-content: center;
         text-align:center;
         font-size:21px;
         font-weight:bold;
         margin:0 auto;
+        margin-left:50px;
     }
     
     

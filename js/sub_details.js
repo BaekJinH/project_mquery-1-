@@ -189,7 +189,7 @@ $(function(){
     $('input:text').focus('click',function(){
         $('.popup').css({'height':'250px'})
     })
-    $('input').blur(function(){
+    $('.search_box').blur(function(){
         $('.popup').css({'height':'0%'});
     })
 
