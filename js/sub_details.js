@@ -66,7 +66,6 @@ $(function(){
         $('input').on('keyup',function(){
             $('.btn_click').not('.btn_hover1').removeClass('click');
             $('.btn_hover1').addClass('click');
-            var value2 = $(this).val().toUpperCase();
             // $('.btn_click').filter(function(){
             //     if(value2 == $('.btn_click')){
             //         $('.btn_click').addClass('click')
@@ -251,9 +250,11 @@ $(function(){
         });
 })
 
-
-
-
+$(function(){
+    $('.img_container > div > h5').click(function(){
+        $('.hide_box').slideToggle(800)
+    })
+})
 
 // $(function(){
 //     $('.img_container div').hover(function(){
@@ -273,17 +274,33 @@ $(function(){
 
 
 $(function(){
-    $('.img_container div').hover(function(){
+    $('.img_container > div').hover(function(){
         $(this).find('h3').css({display:''})
         $(this).find('h3').fadeIn('slow')
         $(this).find('h3').addClass('drop')
+        $(this).find('h5').css({display:''})
+        $(this).find('h5').fadeIn('slow')
+        $(this).find('h5').addClass('drop2')
         // $('.img_container > div > h3').css({top:'50%',left:'50%','transForm':'translate(-50%,-50%)'})
         // $('.img_container > div > h3').animate({marginTop:'50%'})
         // $('.img_container > div > h3').animate({top:'50%',left:'50%'},500)
     },function(){
-        $('.img_container h3').css({display:'none'})
+        $('.img_container h3,.img_container h5').css({display:'none'})
     })
 })
+
+// $(function(){
+    // $('button').click(function(){
+        // $('h1').offset({top:1500,left:500})
+        // var offset = $('h1').offset()
+        // $('html').animate({scrollLeft:offset.left,scrollTop:offset.top},800)
+        // (두가지 방향)우,하로 부드럽게 이동할 시에는 animate 안에 두가지 속성을 같이 넣는다.
+        // $('html').animate({scrollTop:offset.top},800)
+    // })
+// })
+// 위의 예시는 화면 이동
+
+
         // $('.img_container > div > h3').css({marginTop:'-20px'});
 // var offset = $('.img_container > div > h3').offset({top:'-20%'});
 // $('.img_container > div > h3').animate({scrollTop:offset.top});

@@ -6,8 +6,8 @@
 
 
 
-@media screen and (min-width:1100px){
-    
+
+@media screen and (min-width:699px){
     header{
         width:100%;
         height:88px;
@@ -361,7 +361,7 @@
         box-shadow:inset 0 0 0 500px rgba(0, 0, 0, 0.8);
     }
     .slide_img li{
-        width:100vw;
+        width:1902px;
         height:969px;
         float:left;
         color:white;
@@ -591,7 +591,7 @@
     
     main{
         width: 100%;
-        height:4000px;
+        height:auto;
         flex-flow:column wrap;
         justify-content: space-around;
     }
@@ -604,36 +604,20 @@
         /* display:none; */
         margin:0 auto;
     }
-    .img_container{
-        width:100%;
-        heighT:100%;
-    }
+    
     
     .img_container > div{
         overflow:hidden;
     }
     .inner_cont{
-        width:100%;
+        width:1603px;
         heighT:100%;
         margin:0 auto;
         position:relative;
         text-align:center;
     }
     .inner_cont > h2{
-        width:auto;
-        display:inline-block;
-        font-size:50px;
-    }
-    .inner_cont > h2:after ,.select2{
-        display:block;
-        content: '';
-        border-bottom: solid 5px #b8b8a0;  
-        border-radius: 50px;
-        transform: scaleX(1);  
-        transition:transform 250ms ease-in-out;
-    }
-    .select{
-        transform: scaleX(1);  
+        font-size:30px;
     }
     /* .pamp_box{
         width:20%;
@@ -1079,6 +1063,4 @@
         align-items:flex-start
     }
     
-    
-    /* clip-path: polygon(50% 00%, 100% 100%, 00% 100%, 00% 00%); */
-    }
+}
