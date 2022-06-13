@@ -14,19 +14,28 @@ $( document ).ready( function() {
     } 
 );
 
-$(document).ready(function(){
-    $('.down').click(function(){
-        $('html,body').animate({scrollTop : 1000},1000);
-        return false;
+
+
+if (matchMedia('screen and (min-width:699px)').matches){
+    $(document).ready(function(){
+        $('.down').click(function(){
+            $('html,body').animate({scrollTop : 1000},1000);
+            return false;
+        })
     })
-})
+}else{
+    $(document).ready(function(){
+        $('.down').click(function(){
+            $('html,body').animate({scrollTop : 500},1000);
+            return false;
+        })
+    })
+}
 
 
-// $(document).ready(function(){
-//     $('.text').display='';
-//     $('.text').fadeIn('slow')
-//     $('.text').fadeIn(3000)
-// })
+
+
+
 
 
 if (matchMedia('screen and (min-width:699px)').matches){
@@ -205,19 +214,25 @@ $(function(){
 //     })
 // })
 
+$(function(){
+    if (matchMedia('screen and (min-width:699px)').matches){}
+
+})
 
 $(function(){
     $('input:text').mousedown('click',function(){
-        $('.popup').css({'height':'250px'})
-        $('.cate_box').css({display:'block'})
+        $('.popup').css({'height':'350px'})
+        // $('.popup').slideDown('slow')
+        $('.category').css({display:'flex'})
 
         // 한 번 만들어보는 것
         // $('.btn_box').css({height:'0%'})
     })
-
+    $('.category').css({display:'none'})
     $('.search_box').mouseleave(function(){
+        // $('.popup').slideUp('slow')
         $('.popup').css({'height':'0%'});
-        $('.cate_box').fadeOut()
+        $('.category').fadeOut()
     })
 })
 
@@ -271,16 +286,14 @@ $(function(){
 //     })
 // })
 
-
-
 $(function(){
     $('.img_container > div').hover(function(){
         $(this).find('h3').css({display:''})
         $(this).find('h3').fadeIn('slow')
         $(this).find('h3').addClass('drop')
-        $(this).find('h5').css({display:''})
-        $(this).find('h5').fadeIn('slow')
-        $(this).find('h5').addClass('drop2')
+        // $(this).find('h5').css({display:''})
+        // $(this).find('h5').fadeIn('slow')
+        // $(this).find('h5').addClass('drop2')
         // $('.img_container > div > h3').css({top:'50%',left:'50%','transForm':'translate(-50%,-50%)'})
         // $('.img_container > div > h3').animate({marginTop:'50%'})
         // $('.img_container > div > h3').animate({top:'50%',left:'50%'},500)
