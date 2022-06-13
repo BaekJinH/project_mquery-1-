@@ -3,9 +3,6 @@
     overflow:hidden;
     position:relative;
 }
-
-
-
 @media screen and (max-width:699px){
     
     header{
@@ -32,7 +29,7 @@
         justify-content:space-between;
         align-items: center;
         margin:0 auto;
-        width:1679px;
+        width:100%;
         height: 68px;
     }
     
@@ -71,12 +68,6 @@
         font-weight:bold;
     }
     .nav_call{
-        width:185px;
-        height:68px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        color:white;
         display:none;
     }
     .nav_call a{
@@ -84,7 +75,7 @@
     }
     
     .book_btn{
-        width:185px;
+        width:125px;
         height:68px;
         display:flex;
         justify-content:center;
@@ -340,7 +331,7 @@
     
     
     .text h3{
-        font-size:60px;
+        font-size:40px;
         margin-bottom:30px; 
     }
     .text h1{
@@ -596,41 +587,32 @@
         transform:translate()
     } */
     
+
+
+    /* 대공사하기 */
     
     main{
-        width: 100%;
+        width:100%;
         height:auto;
+        display:flex;
         flex-flow:column wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
-    /* main2 */
-    
-    .hide_box{
-        width:85%;
-        height:100%;
-        background-color:yellow;
-        /* display:none; */
-        margin:0 auto;
+
+    main h2{
+        display:inline-block;
+        text-align:center;
+
     }
     .img_container{
         width:100%;
-        heighT:100%;
+        height:auto;
+
     }
-    
     .img_container > div{
-        overflow:hidden;
-    }
-    .inner_cont{
-        width:100%;
-        heighT:100%;
-        margin:0 auto;
-        position:relative;
-        text-align:center;
-    }
-    .inner_cont > h2{
-        width:auto;
-        display:inline-block;
-        font-size:50px;
+        width:90%;
+        height:500px;
+        background:#eee;
     }
     .inner_cont > h2:after ,.select2{
         display:block;
@@ -643,24 +625,9 @@
     .select{
         transform: scaleX(1);  
     }
-    /* .pamp_box{
-        width:20%;
-        height:100%;
-        position:absolute;
-        background:#eee;
-    } */
+
     
-    #garden-cont{
-        width:100%;
-        height:700px;
-        margin-bottom:50px;
-    }
-    .img_container > div{
-        position:relative;
-        display:flex;
-        justify-content: center;
-        align-items:center;
-    }
+
     .img_container > div > h3{
         color:white;
         display:none;
@@ -702,39 +669,9 @@
         transition:0.2s
     
     }
-    .drop2{
-        animation:drop_sec 0.8s;
-    }
-    @keyframes drop_sec{
-        0%{
-            opacity:0;
-            top:10%;
-        }
-        50%{
-            opacity:0.2;
-        }
-        100%{
-            opacity:1;
-            top:85%;
-        }
-    }
-    .img_container{
-        width: 100%;
-        height:100%;
-        display:flex;
-        flex-flow:row wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    
-    
-    .garden_img{
-        width:18%;
-        height:60%;
-        overflow: hidden;
-        position:relative;
-    }
+
+
+
     .garden_img:before{
         content:'';
         display:none;
@@ -747,10 +684,7 @@
         bottom:00px;
     }
 
-    .img_container > div:hover:after{
-        display:block;
-        animation:slideup 0.5s;
-    }
+
     .img_container > div:hover:before{
         display:block;
         animation:slidedown 0.5s;
@@ -765,15 +699,7 @@
     
         }
     }
-    /* @keyframes slidedown{
-        0%{
-            bottom:350px;
-        }
-        100%{
-            bottom:0px
-    
-        }
-    } */
+
     .garden_img:nth-of-type(1){
         background-image:url(../img/garden_main.jpg);
         background-size:cover;
@@ -799,35 +725,7 @@
         background-size:cover;
         background-position:center;
     }
-    .garden_img:hover{
-        /* animation:up 0.5s; */
-        cursor:pointer;
-    }
-    @keyframes up{
-        0%{
-            bottom:0;
-        }
-        100%{
-            bottom:10%;
-        }
-    }
-    
-    
-    
-    #hotel-cont{
-        width:100%;
-        height:700px;
-        margin-bottom:50px;
-    
-    }
-    
-    
-    .hotel_img{
-        width:18%;
-        height:60%;
-        background:#eee;
-    
-    }
+
     
     .hotel_img:before{
         content:'';
@@ -866,21 +764,7 @@
         background-position:center;
         background-image:url(../img/hotel_5.jpg)
     }
-    
-    #interi-cont{
-        width:100%;
-        height:700px;
-        margin-bottom:50px;
-    
-    }
-    
-    .inte_img{
-        width:18%;
-        height:60%;
-        background:#eee;
-    
-    }
-    
+
     .inte_img:before{
         content:'';
         display:none;
@@ -920,19 +804,7 @@
     }
     
     
-    #retail-cont{
-        width:100%;
-        height:700px;
-        margin-bottom:50px;
-    
-    }
-    
-    .retail_img{
-        width:18%;
-        height:60%;
-        background:#eee;
-    }
-    
+
     .retail_img:before{
         content:'';
         display:none;
@@ -966,19 +838,7 @@
         background-position:center;
         background-image:url(../img/reta-2.jpg)
     }
-    
-    #yatch-cont{
-        width:100%;
-        height:700px;
-        margin-bottom:50px;
-    }
-    
-    .yatch_img{
-        width:18%;
-        height:60%;
-        background:#eee;
-    
-    }
+
     
     .yatch_img:before{
         content:'';
@@ -1012,14 +872,7 @@
     
     
     /* first */
-    
-    .img_box .img{
-        width:10%;
-        height:10%;
-        background-size:cover;
-    }
-    
-    
+
     
     
     
@@ -1137,3 +990,4 @@
     
     /* clip-path: polygon(50% 00%, 100% 100%, 00% 100%, 00% 00%); */
     }
+   
