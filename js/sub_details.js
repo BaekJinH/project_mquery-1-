@@ -322,29 +322,29 @@ $(function(){
 
 // 밑 fix 잠시 보류
 
-// if(matchMedia('screen and (min-width:699px)').matches){
-//     $(window).scroll(
-//         function(){
-//             if($(window).scrollTop() > 1050){
-//                 $('.header').addClass('fix')
-//             }
-//             else{
-//                 $('.header').removeClass('fix')
-//             }
-//         }
-//     )
-// }else{
-//     $(window).scroll(
-//         function(){
-//             if($(window).scrollTop() > 650){
-//                 $('.header').addClass('fix')
-//             }
-//             else{
-//                 $('.header').removeClass('fix')
-//             }
-//         }
-//     )
-// }
+if(matchMedia('screen and (min-width:699px)').matches){
+    $(window).scroll(
+        function(){
+            if($(window).scrollTop() > 1050){
+                $('.header').addClass('fix')
+            }
+            else{
+                $('.header').removeClass('fix')
+            }
+        }
+    )
+}else{
+    $(window).scroll(
+        function(){
+            if($(window).scrollTop() > 650){
+                $('.header').addClass('fix')
+            }
+            else{
+                $('.header').removeClass('fix')
+            }
+        }
+    )
+}
 
 
 
