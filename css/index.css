@@ -3185,7 +3185,9 @@ article:nth-of-type(3){
     background-position:center;
     background-size:cover;
 }
-
+.img3{
+    background-image: url(../img/profile2.jpg);
+}
 .name{
     margin-left:20px;
 }
