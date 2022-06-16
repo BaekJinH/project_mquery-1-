@@ -2578,13 +2578,7 @@
         overflow:hidden;
         position:relative;
     }
-    
-    
-    #slider_img{
-        width:100%;
-        height:969px;
-        /* overflow:hidden; */
-    }
+
     .slide_img{
         width:11412px;
         height:100%;
