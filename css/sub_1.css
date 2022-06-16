@@ -3490,8 +3490,8 @@ footer{
     
     #slider{
         margin:0 auto;
-        width:1300px;
-        height:900px;
+        width:100%;
+        height:100%;
         position:relative;
     
     }
@@ -3653,7 +3653,7 @@ footer{
     /* main1 end line */
     
     .main_container2{
-        width:1803px;
+        width:95%;
         height:896px;
         margin:70px auto;
     }
@@ -3682,7 +3682,7 @@ footer{
         align-items: center;
     }
     .main2_txt > .main2_subtxt{
-        width:55%;
+        width:90%;
         height:70%;
     
     }
@@ -3709,7 +3709,7 @@ footer{
     
     
     .numb_container{
-        width:1503px;
+        width:85%;
         height:800px;
         margin:150px auto;
         margin-bottom:300px;
@@ -3737,7 +3737,7 @@ footer{
     }
     
     .left_cont{
-        width:45%;
+        width:42%;
         height:83%;
         display:flex;
         justify-content:flex-start;
@@ -3787,7 +3787,7 @@ footer{
     }
     
     .total_box{
-        width: 781px;
+        width: 100%;
         height:50%;
     }
     
@@ -3842,7 +3842,7 @@ footer{
     
     
     .right_txtbox{
-        width: 781px;
+        width:100%;
         height:45%;
         background-image:url(../img/right_img.jpg);
         box-shadow:inset 0 0 0 500px rgba(0, 0,0,0.2);
@@ -4062,7 +4062,7 @@ footer{
     
     /* main3 tophead end line */
     .main_container3{
-        width:1503px;
+        width:79%;
         height:600px;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -4155,7 +4155,7 @@ footer{
     
     
     .main_container4{
-        width:1503px;
+        width:79%;
         height:600px;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -4247,7 +4247,8 @@ footer{
     
     
     .main_container5{
-        width:1503px;
+        width:79%;
+
         height:600px;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -4335,7 +4336,8 @@ footer{
     
     
     .main_container6{
-        width:1503px;
+        width:79%;
+
         height:600px;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -4413,7 +4415,8 @@ footer{
     
     
     .main_container7{
-        width:1503px;
+        width:79%;
+
         height:600px;
         margin:0 auto;
         border-top:1px solid #eee;
@@ -4674,7 +4677,7 @@ footer{
 }
 .foot_container{
     margin:0 auto;
-    width:1320px;
+    width:80%;
     height:442px;
     display:flex;
     align-items: center;
